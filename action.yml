@@ -1,0 +1,41 @@
+name: 'Delete ACR Image Tag'
+description: 'Deletes an image from a repository'
+inputs:
+  access-key-id:
+    description: 'Access key id'
+    required: true
+    default: ''
+  access-key-secret:
+    description: 'Access key secret'
+    required: true
+    default: ''
+  region-id:
+    description: 'Region id'
+    required: false
+    default: 'cn-hangzhou'
+  instance-id:
+    description: 'Registry instance id'
+    required: false
+    default: ''
+  repo-id:
+    description: 'The ID of the image repository'
+    required: false
+    default: ''
+  repo-namespace:
+    description: 'The name of the namespace'
+    required: true
+    default: ''
+  repo-name:
+    description: 'The name of the repository'
+    required: true
+    default: ''
+  tag:
+    description: 'The tag of the image'
+    required: true
+    default: ''
+branding:
+  color: 'green'
+  icon: 'anchor'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

@@ -1,0 +1,25 @@
+{
+    "name": "acr-delete-tag",
+    "version": "1.0.0",
+    "main": "src/delete.js",
+    "scripts": {
+        "build": "ncc build src/delete.js -o dist --license licenses.txt"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hello-liang-shan/acr-delete-tag.git"
+    },
+    "keywords": [
+        "action",
+        "acr",
+        "delete",
+        "tag"
+    ],
+    "author": "hello.liang.shan@gmail.com",
+    "license": "MIT",
+    "devDependencies": {
+        "@actions/core": "^1.6.0",
+        "@alicloud/pop-core": "^1.7.10",
+        "@vercel/ncc": "^0.33.1"
+    }
+}
